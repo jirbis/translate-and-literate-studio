@@ -3,27 +3,31 @@ translate-and-literate/
 ├─ README.md
 ├─ AGENTS.md
 ├─ WORKFLOW.md
+├─ CLI-interface.md
+├─ FILE_STRUCTIRE.md
+├─ translator.yml
 ├─ LICENSE
 ├─ .gitignore
 │
 ├─ config/
-│  ├─ translator.yml                # базовые настройки пайплайна
-│  ├─ style_guide_ru.md             # "живой" стайл-гайд редактора
-│  ├─ glossary.yml                  # EN->RU терминология и предпочтения
-│  ├─ do_not_translate.yml          # бренды/имена/термины "как есть"
-│  ├─ forbidden_words_ru.yml        # нежелательные слова/кальки + замены
+│  ├─ style_guide_ru.md             # living editorial style guide
+│  ├─ glossary.yml                  # EN->RU terminology and preferences
+│  ├─ do_not_translate.yml          # brands/names/terms to keep as-is
+│  ├─ forbidden_words_ru.yml        # discouraged calques + replacements
 │  └─ prompts/
-│     ├─ translator.md              # промпт/инструкции агента TRANSLATOR
-│     ├─ literary_editor.md         # промпт/инструкции агента LITERARY EDITOR
-│     ├─ qa_checker.md              # промпт/инструкции агента QA
-│     └─ style_learner.md           # промпт/инструкции агента STYLE LEARNER
+│     ├─ translator.md              # prompt/instructions for TRANSLATOR
+│     ├─ literary_editor.md         # prompt/instructions for LITERARY EDITOR
+│     ├─ qa_checker.md              # prompt/instructions for QA
+│     └─ style_learner.md           # prompt/instructions for STYLE LEARNER
 │
 ├─ docs/
 │  ├─ index.md
-│  ├─ config.md                     # описание файлов config/*
-│  ├─ agents.md                     # расширенная документация по агентам
-│  ├─ workflow.md                   # расширенная схема + артефакты
-│  └─ cli.md                        # документация CLI
+│  ├─ PITCH.md
+│  ├─ use_cased.md
+│  ├─ config.md                     # description of config/* files
+│  ├─ agents.md                     # extended documentation on agents
+│  ├─ workflow.md                   # expanded workflow and artifacts
+│  └─ cli.md                        # CLI documentation
 │
 ├─ examples/
 │  ├─ sample_essay/
@@ -48,10 +52,10 @@ translate-and-literate/
 │
 └─ engine/
    ├─ tl                             # CLI entrypoint (bash wrapper)
-   ├─ tl.mjs                         # Node CLI (или tl.py)
+   ├─ tl.mjs                         # Node CLI (stub)
    ├─ adapters/
-   │  ├─ codex.md                    # как дергать Codex (инструкции)
-   │  └─ claude_code.md              # как дергать Claude Code (инструкции)
+   │  ├─ codex.md                    # how to call Codex (instructions)
+   │  └─ claude_code.md              # how to call Claude Code (instructions)
    ├─ pipeline/
    │  ├─ orchestrator.mjs
    │  ├─ preprocess.mjs
