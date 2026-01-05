@@ -1,0 +1,7 @@
+node_modules
+runs/*
+!runs/2026-01-05_sample_essay/
+!runs/2026-01-05_sample_essay/**
+!.gitkeep
+.env
+.DS_Store

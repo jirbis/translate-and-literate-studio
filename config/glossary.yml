@@ -1,0 +1,7 @@
+# Glossary EN->RU
+# Format: English term: preferred Russian rendering
+product: продукт
+workflow: рабочий процесс
+pipeline: конвейер
+agent: агент
+human-in-the-loop: человек в цикле

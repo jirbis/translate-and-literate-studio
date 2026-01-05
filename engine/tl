@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Stub CLI wrapper for translate-and-literate workflow.
+# Route commands to Node entrypoint until full implementation is provided.
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+NODE_ENTRY="$SCRIPT_DIR/tl.mjs"
+
+node "$NODE_ENTRY" "$@"
