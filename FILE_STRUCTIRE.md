@@ -1,3 +1,4 @@
+```
 translate-and-literate/
 ├─ README.md
 ├─ AGENTS.md
@@ -63,3 +64,4 @@ translate-and-literate/
       ├─ io.mjs
       ├─ diff.mjs
       └─ yaml.mjs
+```
