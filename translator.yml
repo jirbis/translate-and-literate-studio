@@ -1,0 +1,23 @@
+source_lang: en
+target_lang: ru
+
+chunking:
+  max_chars: 6000
+  overlap_chars: 300
+
+outputs:
+  raw_translation: "03_translation_raw_ru.md"
+  literary: "04_literary_ru.md"
+  qa_report: "05_qa_report.md"
+
+style:
+  guide_path: "config/style_guide_ru.md"
+  glossary_path: "config/glossary.yml"
+  do_not_translate_path: "config/do_not_translate.yml"
+  forbidden_words_path: "config/forbidden_words_ru.yml"
+
+engine:
+  provider: "claude-code"   # or "codex"
+  temperature_translate: 0.2
+  temperature_literate: 0.6
+  temperature_qa: 0.1
