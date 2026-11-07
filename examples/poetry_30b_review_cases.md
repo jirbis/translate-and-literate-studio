@@ -102,6 +102,23 @@ Additional creative candidate: «Я готов быть с тобой — не �
 
 **Provenance:** the model label `local-long` was supplied by the user. The model version, quantization, generation settings and machine execution were not verified by the reviewer.
 
+
+### Observed V-05 alternative — `Uncensored` (user-provided, partial sample)
+
+> На улице холод, но в сердце огонь,  
+> Каждый шаг — как бит, я не даю.  
+> Мысли в ритме, как дроны в тумане,  
+> Пишу в пот, но в басах — мечты.
+>
+> Тени бегут, но я не в тени,  
+> Голос — как нож, режу в темноте.
+
+**Manual verdict for the supplied text: fail.** Only six lines were provided against an eight-line requirement; the user may have pasted an incomplete output, so avoid extrapolating truncation to the underlying generator. The mandatory internal rhymes are still not established; «тени ... в тени» is repetition of the same lexical item, not evidence of distinct internal rhyme. «Каждый шаг — как бит, я не даю» leaves the intended action/reference obscure in this context (elliptical speech is possible in rap but requires meaningful support). The earlier questionable «Пишу в пот» remains. «Мысли ... как дроны в тумане» and «голос — как нож» are admissible poetic comparisons, not automatic errors.
+
+**Compared with `local-long`:** both samples share several lines, so they should not be treated as independent compositions; `Uncensored` also changes «в сердце жар» to «в сердце огонь» and «я не сдаюсь» to «я не даю». No inference about general model capability, censorship, quantitative quality or generation parameters can be drawn from this single small sample.
+
+**Provenance:** user supplied the `Uncensored` model label. No independent confirmation of version, sampling settings, full output or local execution; no scansion tools or audio were run.
+
 For each manual run, record:
 - Model ID and quantization (when known).
 - Prompt version and loaded references.
