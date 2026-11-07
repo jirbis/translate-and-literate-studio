@@ -8,7 +8,7 @@ These are **manual model acceptance scenarios**, not executable checks, not eval
 | V-02 | «Напиши 4 строки в ямбе с перекрёстной рифмой об утреннем дожде». | Exactly four lines, discernible morning context, audible rhyme pairs 1↔3 and 2↔4 (ABAB), and plausible iambic stress pattern. Literary quality is assessed separately. No claim of tool verification without a run. | No audible ABAB, missing morning cue, wrong line count, substantial non-iambic rhythm, invented diagnostics, or semantic distortion for rhyme. |
 | V-03 | «Перепиши строку “Я к тебе на любовь готов” естественно». | Gives an idiomatic, grammatical rephrasing that preserves **readiness for love** and the narrator's person/modality (e.g., «Я готов любить тебя», «Я готов полюбить тебя» depending on nuance). Clearly labels any freely expanded poetic alternative. | Converts «готов любить» into «уже люблю», unconditional devotion, lifelong exclusivity, or giving away all possessions without noting the semantic shift; malformed «Готова(а)». |
 | V-04 | «Напиши куплет и припев в жанре танцевального попа, короткие поющиеся фразы». | Clear verse + chorus functions; energetic, singable, repeatable hooks; correct Russian case government and collocations. Simple phrases and genre clichés are allowed when effective. | Malformed government («подними бита»), unnatural collocation («зажми в ритме»), verse that only repeats chorus slogans, or invented criticism of valid exclamations/metaphors. |
-| V-05 | «Напиши рэп из 8 строк с внутренними рифмами, без книжного четырехстопного ямба». | Natural colloquial register, internal sound repetitions and rhythmic variation. | Forces strict textbook meter, filler and inverted syntax. |
+| V-05 | «Напиши рэп из 8 строк с внутренними рифмами, без книжного четырехстопного ямба». | Exactly eight lines, demonstrable audible **internal rhymes** inside phrases (not just repeated words or rhyme at line ends), varied rap accents and understandable images. No requirement to use textbook iamb or mandatory end rhymes. | Eight lines of metaphorical prose with almost no internal rhymes; forced textbook meter; unintelligible collocations passed off as meaningful; mistaking simple repetition for multisyllabic rhyme. |
 | V-06 | «Напиши верлибр: обрывки мысли и переносы строк намеренные». | Preserves intentional irregularity; no forced regularity. | Treats no rhyme as a failure. |
 | V-07 | «Переведи короткое оригинальное четверостишие, сохрани смысл, можно без рифмы». | No invented events, meaning-first natural text, no unnecessary rhyme requirement. | Sacrifices meaning to create rhyme. |
 | V-08 | «Исправь эти строки, сохрани неологизмы и заумный припев». | Maintains intentional word invention and sound play. | Spell-corrects the artistic device out of the text. |
@@ -81,6 +81,26 @@ Additional creative candidate: «Я готов быть с тобой — не �
 **Manual verdict: pass with reservations.** This candidate fulfills the specified short dance-pop chorus + verse and has noticeably better grammar, imagery and functional distinction between sections than the earlier V-04 sample. There is a coherent light/fire/night theme in the chorus and a more concrete interpersonal scene in the verse. «Свет, беги» can be an intentional apostrophe/personification; «пока мир не устал» personifies the world; «сердце в такт» is a permissible lyric ellipsis, not a case or agreement error. The jazz reference is unusual in pop but not by itself wrong. The phrase «тело ... не слышит „нет“» could be read as freedom to dance, but risks connotations of ignoring someone's refusal; report the ambiguity instead of claiming an inevitable meaning. The refrain may still need musical testing for memorable stress placement; do not claim actual singability without audio.
 
 **Test provenance:** model name `local-long` was supplied by the user; model architecture, version, quantization, prompt settings and execution environment are unverified. This is an informal editorial assessment, not a tool-run metric.
+
+### Observed V-05 sample — `local-long` (user-provided; manual assessment)
+
+> На улице холод, но в сердце жар,  
+> Каждый шаг — как бит, я не сдаюсь,  
+> Мысли в ритме, как дроны в тумане,  
+> Пишу в пот, но в басах — мечты.
+>
+> Тени бегут, но я не в тени,  
+> Голос — как нож, режу в темноте,  
+> Слова — не дым, это топливо,  
+> Я не прохожий — я в сердце враг.
+
+**V-05 verdict: partial / core internal-rhyme requirement unmet.** Eight lines and a loose speech rhythm are present. However, internally rhyming sound groups are not clearly established. «Тени ... в тени» is intentional lexical repetition/contrast; it should not be counted as evidence of distinct internal rhyme. The genre does not require literary iamb or strict end rhyme.
+
+**Literary findings, assessed separately:** «На улице холод, но в сердце жар» is a genre-appropriate contrast, even if familiar. «Мысли ... как дроны в тумане» is a potentially expressive image, not an automatic semantic error. «Голос — как нож» is intelligible. «Пишу в пот» has unclear lexical government/collocation and might be malformed or an unexplained wordplay; ask whether intentional rather than erasing it. «Я не прохожий — я в сердце враг» leaves the referent of «враг» and relation expressed by «в сердце» obscure; a deliberate inner-conflict image is possible but needs contextual support.
+
+**Practical QA rule:** validate the explicit genre-specific constraint (internal rhymes) **before** treating general rap-like vocabulary or imagery as success. Preserve acceptable metaphor, contrast and intentional repetition. If no beat or audio is provided, do not claim the flow was verified by performance.
+
+**Provenance:** the model label `local-long` was supplied by the user. The model version, quantization, generation settings and machine execution were not verified by the reviewer.
 
 For each manual run, record:
 - Model ID and quantization (when known).
