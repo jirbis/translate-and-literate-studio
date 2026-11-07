@@ -20,8 +20,8 @@ Keep the active context short; split creation and criticism instead of issuing a
 1. **BRIEF:** Identify genre, text type, addressee, subject, emotion, voice, stanza/chorus structure, rhyme scheme, meter if any, length, and intended performance. If parameters are missing, choose suitable defaults; avoid unnecessary clarification.
 2. **PLAN:** Write a 1–3 line internal outline per stanza (narrative function, key images, emotional progression). For a translation, distinguish meaning-bearing details from formal features.
 3. **DRAFT:** Produce full Russian verses. Optimize for meaning, clarity, natural stresses and voice *before* cosmetic rhymes. Use song sections such as `[Verse]`, `[Chorus]`, `[Bridge]` only when requested or useful.
-4. **REVIEW:** In a **separate pass**, scan every line for unidiomatic Russian, filler, trivial rhyme, unnatural word order, questionable stress, meter drift, repeated images and empty line endings. Review each stanza as a unit, not merely isolated lines.
-5. **REVISE:** Rewrite whole weak lines or adjacent line pairs while preserving their role. Avoid repeatedly repairing one end-word and introducing another error.
+4. **REVIEW:** In a **separate pass**, first check case, gender, number, person, verb agreement, tense continuity and pronoun antecedents across lines; then review meaning, stress, meter, rhyme and filler. Russian word order is flexible: inversion may legitimately change emphasis or poetic rhythm and is not automatically a defect. Review each stanza as a unit, not merely isolated lines.
+5. **REVISE:** Correct actual grammatical or referential mismatches first. Reordering Russian words is permissible when grammatical relations and intended focus remain clear. Rewrite whole weak lines or adjacent line pairs when local changes fail; avoid repeatedly repairing one end-word and introducing another error.
 6. **OPTIONAL DIAGNOSTICS:** If verified offline RussianPoetryScansionTool is installed, use it for stress/meter/rhyme observations on the Russian candidates; consult `docs/poetry_tool_assessment.md`. If not, mark prosody `not measured` and do not fabricate metrics. RIFMA supplies sample cases for review, **not** generated rhymes.
 7. **DELIVER:** Default to the final Russian text alone when the user asks for a poem or lyrics. Add succinct notes only if requested or if material trade-offs must be disclosed.
 
@@ -29,7 +29,7 @@ Keep the active context short; split creation and criticism instead of issuing a
 
 - **WRITE:** Only the finished work in the requested format; no unnecessary self-congratulation.
 - **EDIT:** Revised text and, if asked, a short table with *original → revised → why*. Preserve original lyrics in a separate draft when working with user-owned files.
-- **REVIEW:** Issues grouped into `Meaning`, `Russian idiom`, `Stress/rhythm`, `Rhyme/sound`, `Song performance`; each issue references an exact line. No invented grades.
+- **REVIEW:** Issues grouped into `Grammar/referents` (cases, agreement, pronouns, tense), `Meaning/focus`, `Russian idiom`, `Stress/rhythm`, `Rhyme/sound`, `Song performance`; each issue references an exact line. No invented grades.
 - **TRANSLATE:** Meaning-first Russian version; optional form-aware alternative with clearly stated trade-offs. Never force rhyme if that changes the author's intent.
 
 ## Local orchestration / handoff
@@ -43,11 +43,12 @@ Keep the active context short; split creation and criticism instead of issuing a
 
 ## Acceptance gates
 
-1. Does it sound like naturally spoken/sung Russian, except where expressive deviation is deliberate?
-2. Does each line contribute meaning or sound, rather than exist solely for rhyme?
-3. Are the declared genre and form actually plausible? If formal compliance is uncertain, do not claim it.
-4. Does a translation preserve the original's central imagery, facts and tone?
-5. Does a song have a memorable refrain and pronounceable phrases? Performance still needs a real listening check.
+1. Are cases, gender, number, person and verb forms consistent; are pronoun references and any shifts of tense/perspective clear?
+2. Does it sound like naturally spoken/sung Russian, with intentional inversions permitted?
+3. Does each line contribute meaning or sound, rather than exist solely for rhyme?
+4. Are the declared genre and form actually plausible? If formal compliance is uncertain, do not claim it.
+5. Does a translation preserve the original's central imagery, facts and tone?
+6. Does a song have a memorable refrain and pronounceable phrases? Performance still needs a real listening check.
 
 ## References and limitations
 
