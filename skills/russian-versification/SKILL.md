@@ -58,3 +58,7 @@ Keep the active context short; split creation and criticism instead of issuing a
 - `examples/poetry_30b_review_cases.md`: non-executable manual quality scenarios.
 
 This change ships **instructions only**. It has not been deployed on Thor or evaluated with a live 30B model.
+
+## Literary semantics / false-positive gate
+
+Before rejecting an image for “inconsistency”, check ordinary Russian figurative senses, understatement, loose quantifiers, hyperbole and context. “Пустая электричка” may mean *almost empty*; a few passengers are compatible. “Свистит по рельсам” may express fast motion rather than a literally whistling train. Report an actual contradiction only if plausible context-sensitive readings are incompatible. Distinguish certain errors from editorial questions; do not flatten expressive language into literal prose.
