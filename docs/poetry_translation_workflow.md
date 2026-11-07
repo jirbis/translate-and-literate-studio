@@ -22,13 +22,13 @@ If mode is unspecified, choose a **meaning-first literary draft** and optionally
 
 1. **Source close reading** (TRANSLATOR + human): mark images, metaphors, tone, semantic ambiguity, pauses, stanza boundaries, rhyme and approximate musical cadence in the *source language*. Do not use the Russian scansion tool on English text.
 2. **Meaning-first Russian draft** (TRANSLATOR): produce a faithful, idiomatic version. Protect intentional strangeness, neologisms, fragments and unusual word order when aesthetically important.
-3. **Optional form-oriented alternatives** (LITERARY EDITOR): for each significant segment, try two or three versions only where the brief requires metrical/rhyming constraints. Do not force archaic inversions or false rhymes.
+3. **Optional form-oriented alternatives** (LITERARY EDITOR): for each significant segment, try two or three versions only where the brief requires metrical/rhyming constraints. In Russian, inversion is legitimate and may alter focus or rhythm; reject it only when it creates grammatical mistakes, unclear reference or unintended sense. Do not force false rhymes.
 4. **Russian prosodic diagnostics** (POETRY SCANSION REVIEWER):
    - When locally available with verified models, call RPST on each Russian candidate per stanza; use `align(lines)` for verse or `align_rap(text)` for rap where appropriate.
    - Capture proposed accents, meter, rhyme scheme, technicality score and warnings. Inspect stanza boundary effects.
    - The score is diagnostic **per candidate** and cannot decide the winner alone.
    - Without RPST, mark `tool_status: unavailable` and provide only qualitative observations explicitly labeled manual.
-5. **Fidelity and naturalness gate** (QA CHECKER): compare the chosen Russian with the source. Reject invented meaning, changed modality, mechanical calques, awkward inversions, false linguistic stresses, and rhymes achieved by distorting meaning. Check that intentional rhythmic irregularity was not "corrected" away.
+5. **Fidelity, grammar and naturalness gate** (QA CHECKER): compare the chosen Russian with the source. Prioritize agreement in case, gender, number, person, verb tense and pronoun antecedents across lines; distinguish intended shifts from mistakes. Reject invented meaning, changed modality, mechanical calques, false linguistic stresses and rhymes achieved by distorting meaning. Permit meaningful inversions and intentional irregular rhythm.
 6. **Human editorial choice**: select the candidate based on a reasoned trade-off of source imagery, Russian idiom, rhythm, sonic qualities, singability and intended style.
 7. **Style learning**: store approved changes as contextual examples with genre, goal, meter notes and reason. Do not turn them into universal word replacement rules.
 
