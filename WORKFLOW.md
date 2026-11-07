@@ -4,6 +4,12 @@ This document describes the end-to-end agentic workflow.
 
 ---
 
+## Optional poetry/lyrics review
+
+When the source is a poem, lyric, or rap text, use the genre-specific [poetry translation workflow](docs/poetry_translation_workflow.md) for draft variants and an optional Russian prosody pass. It preserves the existing translation, literary editing, QA, and final human approval stages. RPST and RIFMA are **not** wired into the runtime: see the [tool assessment](docs/poetry_tool_assessment.md). Without verified local models, mark numerical metrics as *not measured*.
+
+---
+
 ## Input
 
 - Source text (English)

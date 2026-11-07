@@ -7,6 +7,18 @@ All agents are executed and coordinated by a code agent (Codex / Claude Code).
 
 ---
 
+## OPTIONAL POETRY SCANSION REVIEWER
+
+For Russian-language **poetry, song lyrics and rap**, the orchestrator may invoke the optional review described in [docs/poetry_translation_workflow.md](docs/poetry_translation_workflow.md). The dedicated prompt is [config/prompts/poetry_scansion_reviewer.md](config/prompts/poetry_scansion_reviewer.md). It is a prosody diagnostic pass, **not** a replacement for the literary editor or the human editor. See [docs/poetry_tool_assessment.md](docs/poetry_tool_assessment.md) for unverified dependencies and limitations. Run no network downloads automatically.
+
+---
+
+## OPTIONAL RUSSIAN POET / VERSE EDITOR (LOCAL 30B)
+
+For **new Russian poems, lyrics or rap** (not just English-to-Russian translation), load [skills/russian-versification/SKILL.md](skills/russian-versification/SKILL.md). The small-model instruction is [config/prompts/russian_poet_30b.md](config/prompts/russian_poet_30b.md); load its prosody reference and editing examples on demand. The POET drafts, VERSE_EDITOR reviews and QA verifies; the same local model can run sequential roles in separate turns. Do not claim that the skill has been deployed, that RPST has run, or that meter is verified without measurements.
+
+---
+
 ## ORCHESTRATOR
 
 **Role:** Process coordinator

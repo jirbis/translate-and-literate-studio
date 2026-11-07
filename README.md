@@ -55,6 +55,18 @@ CLI- and repo-driven by design.
 
 ---
 
+## Optional verse, lyrics, and rap review
+
+[Poetry translation workflow](docs/poetry_translation_workflow.md) describes a meaning-first approach, optional form-oriented alternatives, and human-reviewed diagnostics using [RussianPoetryScansionTool and RIFMA](docs/poetry_tool_assessment.md). This is documented guidance only. No automated scoring or library integration is implemented, and external models are not downloaded.
+
+---
+
+## Russian verse composition for local 30B models
+
+The standalone [russian-versification skill](skills/russian-versification/SKILL.md) contains a compact [Russian-language writer/editor prompt](config/prompts/russian_poet_30b.md), [prosody reference](skills/russian-versification/references/versification_ru.md), and [manual 30B review scenarios](examples/poetry_30b_review_cases.md). It covers original poems, lyrics, rap, revision and poetic translations. **Not deployed or tested on Thor; no live RPST measurements or automatic runtime integration.**
+
+---
+
 ## Typical use cases
 
 - Books and long-form non-fiction
