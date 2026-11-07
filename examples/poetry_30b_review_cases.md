@@ -7,7 +7,7 @@ These are **manual model acceptance scenarios**, not executable checks, not eval
 | V-01 | «Напиши 8 строк о поздней электричке. Без рифмы, без объяснений». | Exactly eight meaningful free-verse lines, natural Russian, no invented QA preamble. | Forced rhymes, wrong line count, English calques. |
 | V-02 | «Напиши 4 строки в ямбе с перекрёстной рифмой об утреннем дожде». | Exactly four lines, discernible morning context, audible rhyme pairs 1↔3 and 2↔4 (ABAB), and plausible iambic stress pattern. Literary quality is assessed separately. No claim of tool verification without a run. | No audible ABAB, missing morning cue, wrong line count, substantial non-iambic rhythm, invented diagnostics, or semantic distortion for rhyme. |
 | V-03 | «Перепиши строку “Я к тебе на любовь готов” естественно». | Gives an idiomatic, grammatical rephrasing that preserves **readiness for love** and the narrator's person/modality (e.g., «Я готов любить тебя», «Я готов полюбить тебя» depending on nuance). Clearly labels any freely expanded poetic alternative. | Converts «готов любить» into «уже люблю», unconditional devotion, lifelong exclusivity, or giving away all possessions without noting the semantic shift; malformed «Готова(а)». |
-| V-04 | «Напиши куплет и припев в жанре танцевального попа, короткие поющиеся фразы». | Narrative verse, memorable concise chorus, pronounceable lines. | Dense syntax, identical verse/chorus function, gratuitous filler. |
+| V-04 | «Напиши куплет и припев в жанре танцевального попа, короткие поющиеся фразы». | Clear verse + chorus functions; energetic, singable, repeatable hooks; correct Russian case government and collocations. Simple phrases and genre clichés are allowed when effective. | Malformed government («подними бита»), unnatural collocation («зажми в ритме»), verse that only repeats chorus slogans, or invented criticism of valid exclamations/metaphors. |
 | V-05 | «Напиши рэп из 8 строк с внутренними рифмами, без книжного четырехстопного ямба». | Natural colloquial register, internal sound repetitions and rhythmic variation. | Forces strict textbook meter, filler and inverted syntax. |
 | V-06 | «Напиши верлибр: обрывки мысли и переносы строк намеренные». | Preserves intentional irregularity; no forced regularity. | Treats no rhyme as a failure. |
 | V-07 | «Переведи короткое оригинальное четверостишие, сохрани смысл, можно без рифмы». | No invented events, meaning-first natural text, no unnecessary rhyme requirement. | Sacrifices meaning to create rhyme. |
@@ -43,6 +43,23 @@ Model alternatives:
 The first three are largely grammatical but **drift from readiness to love** toward current love, devotion or exclusivity; the fourth both changes meaning and includes malformed «Готова(а)». Prefer «Я готов любить тебя» for meaning-preserving rephrasing; «Я готов полюбить тебя» has a slightly different aspectual meaning. Adapt «готов/готова» only when speaker gender is known; otherwise clarify or use a gender-neutral construction.
 
 Additional creative candidate: «Я готов быть с тобой — не просто в чувствах, а навсегда». It introduces a plausible artistic idea of lasting commitment, but «не просто в чувствах» is awkwardly collocated. «Я готов быть с тобой — не на миг, а навсегда» is more idiomatic **as a free poetic expansion**, not as an exact rephrasing: «навсегда» adds a lifetime promise. Do not automatically condemn purposeful artistic expansion; distinguish the requested editing mode from free rewriting.
+
+### Observed sample for V-04 — manual review, not a reproduced Thor run
+
+**Unlabeled four-line section (possible chorus):**
+
+> Танцуй, танцуй, давай веселиться!  
+> Руки вверх, небо наше!  
+> DJ, подними бита!  
+> Мы — одна большая семья!
+
+**Labeled verse:**
+
+> Зажми в ритме, не тормози!  
+> В эту ночь забудем про все!  
+> Смотри на меня, я твоя звезда!
+
+**Verdict: partial.** Model captures dance-pop energy, short phrases, repetition and a plausible hook. It includes two distinct grammatical/lexical problems: «подними бита» (invalid case for an intended object «бит»; natural alternatives depend on musical meaning, e.g. «Диджей, качай бит!» or «Диджей, добавь басов!») and «зажми в ритме» (unnatural collocation; likely «зажги в ритме», «двигайся в ритме»). The first section plausibly functions as a chorus but lacks its label, while the labeled verse mostly continues the calls to dance rather than adding scene or movement. Lack of complex plot is **not** a failure in dance-pop. «Руки вверх, небо наше!» is a legitimate energetic exclamation; «я твоя звезда» is a valid persona/metaphor and does not prove the literal singer's gender. Evaluate **grammar and idiom separately from genre suitability**.
 
 For each manual run, record:
 - Model ID and quantization (when known).
