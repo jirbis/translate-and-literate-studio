@@ -13,6 +13,12 @@ For Russian-language **poetry, song lyrics and rap**, the orchestrator may invok
 
 ---
 
+## OPTIONAL RUSSIAN POET / VERSE EDITOR (LOCAL 30B)
+
+For **new Russian poems, lyrics or rap** (not just English-to-Russian translation), load [skills/russian-versification/SKILL.md](skills/russian-versification/SKILL.md). The small-model instruction is [config/prompts/russian_poet_30b.md](config/prompts/russian_poet_30b.md); load its prosody reference and editing examples on demand. The POET drafts, VERSE_EDITOR reviews and QA verifies; the same local model can run sequential roles in separate turns. Do not claim that the skill has been deployed, that RPST has run, or that meter is verified without measurements.
+
+---
+
 ## ORCHESTRATOR
 
 **Role:** Process coordinator
