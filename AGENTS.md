@@ -7,6 +7,12 @@ All agents are executed and coordinated by a code agent (Codex / Claude Code).
 
 ---
 
+## OPTIONAL POETRY SCANSION REVIEWER
+
+For Russian-language **poetry, song lyrics and rap**, the orchestrator may invoke the optional review described in [docs/poetry_translation_workflow.md](docs/poetry_translation_workflow.md). The dedicated prompt is [config/prompts/poetry_scansion_reviewer.md](config/prompts/poetry_scansion_reviewer.md). It is a prosody diagnostic pass, **not** a replacement for the literary editor or the human editor. See [docs/poetry_tool_assessment.md](docs/poetry_tool_assessment.md) for unverified dependencies and limitations. Run no network downloads automatically.
+
+---
+
 ## ORCHESTRATOR
 
 **Role:** Process coordinator
