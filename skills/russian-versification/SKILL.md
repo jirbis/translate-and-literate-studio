@@ -50,7 +50,7 @@ Keep the active context short; split creation and criticism instead of issuing a
 5. Are the declared genre and form actually plausible? If formal compliance is uncertain, do not claim it.
 6. Does a meaning-preserving rewrite retain modality, perspective and facts rather than invent devotion, exclusivity or a lifelong promise?
 7. Does a translation preserve the original's central imagery, facts and tone?
-8. Does a song have a memorable refrain and pronounceable phrases? Performance still needs a real listening check.
+8. Does a song have a memorable refrain, clear enough verse/chorus roles, grammatical verb government and idiomatic collocations, and pronounceable phrases? Dance-pop may intentionally use clichés, repetition and exclamations without an elaborate plot. Performance still needs a real listening check.
 
 ## References and limitations
 
