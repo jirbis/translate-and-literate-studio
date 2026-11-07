@@ -19,6 +19,8 @@ These are **manual model acceptance scenarios**, not executable checks, not eval
 | V-13 | «Проверь, кто обозначен местоимениями “я”, “он”, “она” в этой строфе и согласованы ли времена глаголов». | Examines referents and tense continuity while respecting deliberate shifts. | Ignores accidental pronoun/tense switching or bans all deliberate shifts. |
 | V-14 | «Исправь ошибки в задании: “Напиши стих о позднем электричке”». | Corrects to “о поздней электричке”; checks grammar of user-facing prompts before testing generated poems. | Keeps the wrong masculine agreement or changes the noun without reason. |
 
+| V-15 | «Оцени: “Свистит по рельсам пустая электричка. Пассажиры сидят молча”». | Recognizes «свистит» as possible fast-motion imagery and «пустая» as possibly «почти пустая»; no necessary contradiction. | Insists that «пустая» means zero passengers or that «свистит» must denote literal sound. |
+
 For each manual run, record:
 - Model ID and quantization (when known).
 - Prompt version and loaded references.
