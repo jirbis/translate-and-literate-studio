@@ -5,8 +5,8 @@ These are **manual model acceptance scenarios**, not executable checks, not eval
 | ID | User prompt | Pass criteria | Fail criteria |
 | --- | --- | --- | --- |
 | V-01 | «Напиши 8 строк о поздней электричке. Без рифмы, без объяснений». | Exactly eight meaningful free-verse lines, natural Russian, no invented QA preamble. | Forced rhymes, wrong line count, English calques. |
-| V-02 | «Напиши 4 строки в ямбе с перекрёстной рифмой об утреннем дожде». | Attempts the requested form, has a consistent image, flags uncertainty rather than claiming measured perfection. | Incorrect stress declared "perfect", meaningless rhyming endings. |
-| V-03 | «Перепиши строку “Я к тебе на любовь готов” естественно». | Rewrites as idiomatic Russian, acknowledges form may require changing adjacent lines if asked. | Retains unidiomatic phrase merely to keep rhyme. |
+| V-02 | «Напиши 4 строки в ямбе с перекрёстной рифмой об утреннем дожде». | Exactly four lines, discernible morning context, audible rhyme pairs 1↔3 and 2↔4 (ABAB), and plausible iambic stress pattern. Literary quality is assessed separately. No claim of tool verification without a run. | No audible ABAB, missing morning cue, wrong line count, substantial non-iambic rhythm, invented diagnostics, or semantic distortion for rhyme. |
+| V-03 | «Перепиши строку “Я к тебе на любовь готов” естественно». | Gives an idiomatic, grammatical rephrasing that preserves **readiness for love** and the narrator's person/modality (e.g., «Я готов любить тебя», «Я готов полюбить тебя» depending on nuance). Clearly labels any freely expanded poetic alternative. | Converts «готов любить» into «уже люблю», unconditional devotion, lifelong exclusivity, or giving away all possessions without noting the semantic shift; malformed «Готова(а)». |
 | V-04 | «Напиши куплет и припев в жанре танцевального попа, короткие поющиеся фразы». | Narrative verse, memorable concise chorus, pronounceable lines. | Dense syntax, identical verse/chorus function, gratuitous filler. |
 | V-05 | «Напиши рэп из 8 строк с внутренними рифмами, без книжного четырехстопного ямба». | Natural colloquial register, internal sound repetitions and rhythmic variation. | Forces strict textbook meter, filler and inverted syntax. |
 | V-06 | «Напиши верлибр: обрывки мысли и переносы строк намеренные». | Preserves intentional irregularity; no forced regularity. | Treats no rhyme as a failure. |
@@ -21,11 +21,34 @@ These are **manual model acceptance scenarios**, not executable checks, not eval
 
 | V-15 | «Оцени: “Свистит по рельсам пустая электричка. Пассажиры сидят молча”». | Recognizes «свистит» as possible fast-motion imagery and «пустая» as possibly «почти пустая»; no necessary contradiction. | Insists that «пустая» means zero passengers or that «свистит» must denote literal sound. |
 
+### Observed sample for V-02 — manual review, not a reproduced Thor run
+
+> Тучи разорвались над крышами домов —  
+> Капли бьют по асфальту, как пули.  
+> Улица превратилась в ручей из воды —  
+> Зонтон не спасает от сырости.
+
+**Formal check: fail.** Four lines, but morning is not indicated; «домов — воды» (A) and «пули — сырости» (B) are not the required rhyme pairs. A sustained iamb is not apparent on manual reading; precise scansion was **not measured**.
+
+**Literary check: independent of form.** «Тучи разорвались» and «капли ... как пули» are legitimate images. «Ручей из воды» is arguably redundant rather than ungrammatical. «Зонтон» might be a typo, fused words or a deliberate neologism; flag uncertainty rather than declaring it definitely incorrect. Form and artistry should not be collapsed into one grade.
+
+### Observed sample for V-03 — manual review, not a reproduced Thor run
+
+Model alternatives:
+1. «Я не просто люблю — я полностью твой».
+2. «Все мои чувства принадлежат тебе».
+3. «Ты — мой единственный выбор в этой жизни».
+4. «Готова(а) отдать тебе все, что у меня есть».
+
+The first three are largely grammatical but **drift from readiness to love** toward current love, devotion or exclusivity; the fourth both changes meaning and includes malformed «Готова(а)». Prefer «Я готов любить тебя» for meaning-preserving rephrasing; «Я готов полюбить тебя» has a slightly different aspectual meaning. Adapt «готов/готова» only when speaker gender is known; otherwise clarify or use a gender-neutral construction.
+
+Additional creative candidate: «Я готов быть с тобой — не просто в чувствах, а навсегда». It introduces a plausible artistic idea of lasting commitment, but «не просто в чувствах» is awkwardly collocated. «Я готов быть с тобой — не на миг, а навсегда» is more idiomatic **as a free poetic expansion**, not as an exact rephrasing: «навсегда» adds a lifetime promise. Do not automatically condemn purposeful artistic expansion; distinguish the requested editing mode from free rewriting.
+
 For each manual run, record:
 - Model ID and quantization (when known).
 - Prompt version and loaded references.
 - Brief and output, preserving the actual text.
-- Reviewer flags by axis (grammar/case/gender/number/person/tense/referents, meaning/focus, idiom, stress, form, performance).
+- Reviewer flags recorded separately for formal requirements (line count, meter, rhyme scheme, time/scene cue) and literary/semantic review (grammar, collocations, speaker gender, modality, coherence, imagery, performance).
 - Review the Russian grammar and unambiguous wording of the **test prompt itself**, not only the model output; fix accidental mistakes before using it as a quality benchmark.
 - Human-selected revision and reasoning.
 - Whether RPST was really executed and which local model assets it used.
