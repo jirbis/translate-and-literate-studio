@@ -61,6 +61,27 @@ Additional creative candidate: «Я готов быть с тобой — не �
 
 **Verdict: partial.** Model captures dance-pop energy, short phrases, repetition and a plausible hook. It includes two distinct grammatical/lexical problems: «подними бита» (invalid case for an intended object «бит»; natural alternatives depend on musical meaning, e.g. «Диджей, качай бит!» or «Диджей, добавь басов!») and «зажми в ритме» (unnatural collocation; likely «зажги в ритме», «двигайся в ритме»). The first section plausibly functions as a chorus but lacks its label, while the labeled verse mostly continues the calls to dance rather than adding scene or movement. Lack of complex plot is **not** a failure in dance-pop. «Руки вверх, небо наше!» is a legitimate energetic exclamation; «я твоя звезда» is a valid persona/metaphor and does not prove the literal singer's gender. Evaluate **grammar and idiom separately from genre suitability**.
 
+
+### Observed V-04 alternative — model label: `local-long` (user-provided)
+
+**Chorus:**
+
+> Свет, беги, не останавливайся!  
+> Тело в ритме — не слышит «нет»!  
+> Танцуй, пока мир не устал,  
+> Мы — огонь, мы — вспышка в ночи!
+
+**Verse:**
+
+> Горит экран, вижу тебя,  
+> Сердце в такт — как бит в джазе.  
+> Сделай шаг, я рядом —  
+> Мир исчез, остался ты.
+
+**Manual verdict: pass with reservations.** This candidate fulfills the specified short dance-pop chorus + verse and has noticeably better grammar, imagery and functional distinction between sections than the earlier V-04 sample. There is a coherent light/fire/night theme in the chorus and a more concrete interpersonal scene in the verse. «Свет, беги» can be an intentional apostrophe/personification; «пока мир не устал» personifies the world; «сердце в такт» is a permissible lyric ellipsis, not a case or agreement error. The jazz reference is unusual in pop but not by itself wrong. The phrase «тело ... не слышит „нет“» could be read as freedom to dance, but risks connotations of ignoring someone's refusal; report the ambiguity instead of claiming an inevitable meaning. The refrain may still need musical testing for memorable stress placement; do not claim actual singability without audio.
+
+**Test provenance:** model name `local-long` was supplied by the user; model architecture, version, quantization, prompt settings and execution environment are unverified. This is an informal editorial assessment, not a tool-run metric.
+
 For each manual run, record:
 - Model ID and quantization (when known).
 - Prompt version and loaded references.
