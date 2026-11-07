@@ -57,3 +57,15 @@ This document describes the end-to-end agentic workflow.
 ## Key principle
 
 Automation stops where editorial judgment begins.
+
+---
+
+## Russian editorial acceptance gate
+
+Before translation, load `config/style_guide_ru.md`, `docs/russian_translation_quality.md`, and the glossary. The translator should not produce English syntax written in Russian words, even when a later literary pass is expected.
+
+During literary editing, perform a standalone native-Russian reading pass, then compare with the source to catch meaning or modality drift.
+
+The QA pass must review the cases in `examples/russian_quality_regressions.md` for contextual regression checks. A passage fails when its meaning is altered **or** its Russian reads like a mechanical translation. Keep the final text clean; put findings and unresolved choices in the QA report.
+
+User edits become proposed contextual examples for the STYLE LEARNER, not automatic global blacklist entries. The human editor retains final authority.
