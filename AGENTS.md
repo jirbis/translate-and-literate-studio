@@ -97,3 +97,16 @@ Output quality target: *readable, natural Russian*
   - example pairs
 
 This agent enables long-term voice adaptation.
+
+---
+
+## Mandatory Russian editorial standard
+
+All translation roles must follow [Natural Russian translation quality](docs/russian_translation_quality.md). The [regression examples](examples/russian_quality_regressions.md) document accepted editorial decisions.
+
+- TRANSLATOR: be accurate without mechanically copying English grammar, invented doubts or inferred motives.
+- LITERARY EDITOR: read the Russian without the English and eliminate unnatural calques while respecting meaning and authorial voice.
+- QA / CONSISTENCY CHECKER: inspect naturalness and certainty as well as facts, dates and terminology; classify issues by severity.
+- STYLE LEARNER: learn from approved before/after corrections with source context, never blindly ban individual words.
+
+Operational prompts are in `config/prompts/`. Changes to this guidance must keep the role prompts aligned.
