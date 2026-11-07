@@ -2,6 +2,10 @@
 
 This is a **genre-specific addition** to the existing translation → literary editing → QA → human approval workflow. It is not a substitute for the general Russian editorial standard. It is not automatically executed by the JavaScript pipeline (currently placeholder code).
 
+## Local Russian versification skill for 30B models
+
+For **original composition** and small-model Russian verse editing, use [../skills/russian-versification/SKILL.md](../skills/russian-versification/SKILL.md), beginning with its compact Russian-language [writer/editor prompt](../config/prompts/russian_poet_30b.md). The skill also supports poetic translation, but this workflow remains the source of truth for meaning-preserving EN→RU translation. It does not automatically install models or change the executable pipeline.
+
 ## Trigger
 
 Activate only when the task involves verse, poetic song text, rap, or an explicit request to preserve sound, meter or rhyme. Do not route ordinary prose, letters, business summaries or technical documentation through verse scoring.
