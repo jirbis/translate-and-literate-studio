@@ -68,3 +68,11 @@ CLI- and repo-driven by design.
 ## One-line summary
 
 > A translation system that learns to write Russian the way you edit it.
+
+---
+
+## Russian translation quality
+
+For natural, idiomatic Russian (rather than English syntax written in Russian words), see the [editorial quality guide](docs/russian_translation_quality.md) and its [review cases](examples/russian_quality_regressions.md).
+
+The translator, literary editor, QA checker, and style learner share this standard through their prompts. These are **editorial instructions and manual review fixtures**; the pipeline's JavaScript modules are currently stubs and do not yet enforce these checks automatically.
