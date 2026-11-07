@@ -55,6 +55,12 @@ CLI- and repo-driven by design.
 
 ---
 
+## Optional verse, lyrics, and rap review
+
+[Poetry translation workflow](docs/poetry_translation_workflow.md) describes a meaning-first approach, optional form-oriented alternatives, and human-reviewed diagnostics using [RussianPoetryScansionTool and RIFMA](docs/poetry_tool_assessment.md). This is documented guidance only. No automated scoring or library integration is implemented, and external models are not downloaded.
+
+---
+
 ## Typical use cases
 
 - Books and long-form non-fiction
